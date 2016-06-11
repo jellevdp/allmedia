@@ -1,7 +1,7 @@
 {
 	"users":[
 		{
-			"userId":"emma1",
+			"userId":"jean1",
 			"password":"passw0rd",
 			"firstName":"Emma",
 			"lastName":"Seybold",
@@ -11,7 +11,7 @@
             "emailAddress": "emma.seybold@nl.ibm.com"
 		},
 		{
-			"userId":"bob1",
+			"userId":"claude1",
 			"password":"passw0rd",
 			"firstName":"Bob",
 			"lastName":"Payne",

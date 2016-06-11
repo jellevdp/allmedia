@@ -12,7 +12,7 @@ var environments = {
 //        chaincode:{
 //            zip_url: ' ',
 //            unzip_dir: ' ',
-//            git_url: ' ',
+//            git_url: '',
 //
 //            //hashed cc name from prev deployment
 //            deployed_name: ''
@@ -39,54 +39,22 @@ var environments = {
             ],
             // in $GOPATH/src/github.com/openblockchain/obc-peer/obc-ca/obcca.yaml.
             users: [
-            {
-                username: 'emma1',
-                secret: 'passw0rd',
-                usertype: 1
-            },
-            {
-                username: 'bob1',
-                secret: 'passw0rd',
-                usertype: 1
-            },
-            {
-                username: 'jim1',
-                secret: 'passw0rd',
-                usertype: 1
-            },
-            {
-                username: 'john1',
-                secret: 'passw0rd',
-                usertype: 1
-            },
-            {
-                username: 'cl1',
-                secret: 'passw0rd',
-                usertype: 2
-            },
-            {
-                username: 'appr1',
-                secret: 'passw0rd',
-                usertype: 3
-            },
-             {
-                 username: 'appr2',
-                 secret: 'passw0rd',
-                 usertype: 3
-             }
+                {
+                    username: 'lukas',
+                    secret: 'NPKYL39uKbkj',
+                    usertype: 1
+                }
             ]
         },
         // NOTE: using custom version of ibm-bc-js to allow http instead of https.
         chaincode:{
-            // ibc uses these
-            zip_url: 'http://localhost:8080/cc.zip', 	        // routes/serve_chaincode_zip
-            unzip_dir: 'deploy', 							// subdirectroy of chaincode after unzipped
-            git_url: 'chaincode/deploy',                          // File url in the obc-dev-env container: $GOPATH/src/...
-            deployed_name: null,     						    // hashed cc name from prev deployment. Makes sure no redeploy is needed!
-            // custom additions
-            local_path: 'chaincode/deploy',        	// the path to the chaincode dir on this machine.
-            auto_redeploy: true 						        // watch the filesystem for changes
-        }
+        						zip_url: 'https://github.com/jellevdp/allmedia-chaincode/archive/master.zip',
+        						unzip_dir: 'allmedia-chaincode-master',								//subdirectroy name of chaincode after unzipped
+        						git_url: 'https://github.com/jellevdp/allmedia-chaincode',		//GO get http url
+
+        						//hashed cc name from prev deployment
+        						//deployed_name: '14b711be6f0d00b190ea26ca48c22234d93996b6e625a4b108a7bbbde064edf0179527f30df238d61b66246fe1908005caa5204dd73488269c8999276719ca8b'
+        					}
     }
 }
 
