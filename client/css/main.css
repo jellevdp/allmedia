@@ -1,0 +1,79 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.loading-spinner {
+  width: 100%;
+  text-align: center; }
+  .loading-spinner img {
+    height: 35px;
+    opacity: 0.4; }
+
+.notificationBar {
+  list-style: none;
+  padding: 0;
+  position: relative; }
+  .notificationBar li {
+    margin-bottom: 60px; }
+    .notificationBar li div {
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: white;
+      width: 100%;
+      margin-top: 0; }
+      .notificationBar li div h2 {
+        margin-top: 0px;
+        display: inline-block;
+        vertical-align: bottom; }
+      .notificationBar li div i {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        line-height: 30px; }
+      .notificationBar li div .glyphicon {
+        background-size: 60%;
+        width: 50px;
+        height: 50px; }
+    .notificationBar li .details {
+      margin-left: 0; }
+      .notificationBar li .details p:nth-child(odd) {
+        color: #009286; }
+    .notificationBar li .hashes {
+      font-size: 13px; }
+    .notificationBar li .transactions-box {
+      max-height: 320px;
+      overflow: scroll; }
+      .notificationBar li .transactions-box h4 {
+        margin-top: 6px;
+        margin-bottom: 3px; }
+      .notificationBar li .transactions-box .transaction {
+        height: 100px; }
+        .notificationBar li .transactions-box .transaction .transaction-id {
+          font-size: 14px; }
+        .notificationBar li .transactions-box .transaction p {
+          font-size: 11px;
+          margin-bottom: 0px; }
+        .notificationBar li .transactions-box .transaction .event {
+          color: #009286;
+          font-weight: bold; }
+        .notificationBar li .transactions-box .transaction .col-xs-2 {
+          padding-left: 0px;
+          padding-top: 4px; }
+        .notificationBar li .transactions-box .transaction .col-xs-10 {
+          padding-top: 4px; }
+
+.notificationBar:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #596363;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1; }
+
+.panel-title {
+  margin-bottom: 30px; }
